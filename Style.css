@@ -1,0 +1,1040 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  color: #275934;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #59D986;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
+  }
+  
+  #header .container-header {
+    transition: all 0.5s;
+    background: #fff;
+    z-index: 997;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a0a0a0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #header .logo {
+    width: 220px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 992px) {
+    #header .logo {
+      width: 220px;
+    }
+  }
+  /*--------------------------------------------------------------
+  # Fim Header
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  # Navegação Menu Desktop
+  --------------------------------------------------------------*/
+  .navbar {
+    padding: 0;
+    margin-left: auto;
+  }
+
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .navbar li {
+    position: relative;
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 14px;
+    color: #275934;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover > a {
+    color: #59D986;
+  }
+
+  /* Botão Entrar */
+  .navbar .area-logada,
+  .navbar .area-logada:focus {
+    background: #275934;
+    padding: 8px 20px;
+    margin-left: 30px;
+    color: #fff;
+    border-radius: 4px;
+    border-color: #275934;
+    border: 1px solid #275934;
+    text-align: center;
+  }
+
+  .navbar .area-logada:hover,
+  .navbar .area-logada:focus:hover {
+    background-color: #fff;
+    color: #275934;
+    text-align: center;
+    border-radius: 4px;
+    border-color: #275934;
+    border: 1px solid #275934;
+  }
+  /* Botão Entrar */
+
+  /*--------------------------------------------------------------
+  # Fim Navegação Menu Desktop
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  # Mobile Navigação
+  --------------------------------------------------------------*/
+  .menu-mobile {
+    display: none;
+  }
+ 
+  .menu-mobile-fechar {
+    display: none;
+    z-index: 1001;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding-top: 13px;
+  }
+
+  .menu-mobile-icon {
+    color: #275934;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.1s;
+  }
+
+  @media (max-width: 991px) {
+    .menu-mobile {
+      text-align: right;
+      display: block;
+      padding-right: 20px;
+    }
+  
+    .menu-mobile-icon {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  }
+  
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(39, 89, 52, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+  }
+  
+  .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    transition: 0.3s;
+    border-radius: 6px;
+  }
+  
+  .navbar-mobile a,
+  .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #275934;
+  }
+  
+  .navbar-mobile a:hover,
+  .navbar-mobile .active,
+  .navbar-mobile li:hover > a {
+    color: #59D986;
+  }
+  
+  .navbar-mobile .area-logada,
+  .navbar-mobile .area-logada:focus {
+    margin: 15px;
+    display: block;
+    text-align: center;
+  }
+  
+  /*--------------------------------------------------------------
+  # Fim Mobile Navigação
+  --------------------------------------------------------------*/
+
+
+  /*--------------------------------------------------------------
+  # Aplica a todos tópicos da página
+  --------------------------------------------------------------*/
+  .center {
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*--------------------------------------------------------------
+  # Aplica a todos tópicos da página
+  --------------------------------------------------------------*/
+
+  /*--------------------------------------------------------------
+  # Salões
+  --------------------------------------------------------------*/
+
+  section.salao {
+    background-color: #f8fbfe;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+
+  .edu-especial h2 {
+    color: #001f3f;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .edu-especial p {
+    color: gray;
+    font-size: 14px;
+    margin: 10px 0;
+    margin-bottom: 50px;
+  }
+
+  .diferencias-especiais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .diferencial-especial {
+    background-color: rgb(3, 72, 20);
+    width: calc(33.33% - 1%);
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    height: 150px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .diferencial-especial .logo-salao {
+    width: 115%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço, mantendo sua proporção */
+    border-radius: 15px;
+}
+  
+  .diferencial-especial:hover {
+    transform: scale(1.05); /* Aumenta o tamanho quando o mouse está sobre */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Adiciona sombra mais intensa durante o hover */
+  }
+ 
+  .diferencias-especiais h4 {
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .diferencias-especiais p {
+    margin: 0;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .icone-especial {
+    padding: 25px 0;
+    position: relative;
+    width: 100px; /* Largura do círculo SVG */
+    height: 100px; /* Altura do círculo SVG */
+  }
+  
+  .icone-especial i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .diferencial-especial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Cor de fundo inicial */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para o efeito */
+    z-index: 1; /* Coloca o pseudo-elemento na frente da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Tamanho da fonte */
+    color: #F2F2F2; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    opacity: 0; /* Inicialmente oculto */
+    border-radius: 15px;
+}
+
+.diferencial-especial.primeiro:hover::before {
+    background-color: rgba(39, 89, 52, 0.5); /* Altera a cor de fundo para cinza claro com opacidade */
+    border-radius: 15px;
+    opacity: 1; /* Mostra o texto ao passar o mouse */
+    content: "Casamento"; /* Adiciona o texto "Casamento" */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para o efeito */
+    cursor: pointer;
+}
+
+.diferencial-especial.segundo:hover::before {
+  background-color: rgba(39, 89, 52, 0.5); 
+  border-radius: 15px;
+  opacity: 1; 
+  content: "Infantil"; 
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+}
+
+.diferencial-especial.terceiro:hover::before {
+  background-color: rgba(39, 89, 52, 0.5); 
+  border-radius: 15px;
+  opacity: 1; 
+  content: "Sítios"; 
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+}
+
+.diferencial-especial.quarto:hover::before {
+  background-color: rgba(39, 89, 52, 0.5); 
+  border-radius: 15px;
+  opacity: 1; 
+  content: "Eventos"; 
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+}
+
+.diferencial-especial.quinto:hover::before {
+  background-color: rgba(39, 89, 52, 0.5);
+  border-radius: 15px;
+  opacity: 1; 
+  content: "Temáticos"; 
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+}
+
+.diferencial-especial.sexto:hover::before {
+  background-color: rgba(39, 89, 52, 0.5); 
+  border-radius: 15px;
+  opacity: 1; 
+  content: "Serviços"; 
+  transition: background-color 0.3s ease; 
+  cursor: pointer;
+}
+
+.salao-proc {
+  padding: 100px 0; 
+  width: 100%;
+  text-align: center;
+}
+
+/* Botão Procurar */
+input, button {
+  margin-top: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+  .salao-proc .btn-proc,
+  .salao-proc .btn-proc:focus {
+    background: #275934;
+    padding: 12px 30px;
+    margin-left: 30px;
+    color: #fff;
+    border-radius: 4px;
+    border-color: #275934;
+    border: 1px solid #275934;
+    text-align: center;    
+  }
+
+  .salao-proc .btn-proc:hover,
+  .salao-proc .btn-proc:focus:hover {
+    background-color: #fff;
+    color: #275934;
+    text-align: center;
+    border-radius: 4px;
+    border-color: #275934;
+    border: 1px solid #275934;
+    transition: 0.3s;
+  }
+  /* Botão Procurar */
+
+  .titulos{
+    color: #275934;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    margin-bottom: 25px;
+  }
+
+
+
+input[type="text" i] {
+  padding-block: 1px;
+  padding-inline: 2px;
+}
+
+.form-procurar .form {
+  padding: 12px 20px;
+  border-radius: 12px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form {
+  width: 25%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #275934;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid  #275934;
+}
+ 
+  /*--------------------------------------------------------------
+  # Fim Salões
+  --------------------------------------------------------------*/
+  section.sobre {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #a0a0a0;
+  }
+
+  .titulos {
+    width: 100%;
+    text-align: center;
+  }
+
+  .titulos h2 {
+    color: #275934;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  }
+
+  .titulos p {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+  }
+
+  .conteudo-sobre {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .servicos,
+  .conteudo {
+    flex: 1;
+  }
+
+  .servicos {
+    flex: 1;
+    padding-left: 100px;
+  }
+
+  .conteudo {
+    flex: 1;
+    order: 1;
+    color: gray;
+  }
+
+  .icone-sobre {
+    padding-right: 10px;
+  }
+  
+  .conteudo-sobre p {
+    padding-top: 25px;
+    margin: 0 30px;
+  }
+  
+  .servico {
+    color: #275934;
+    font-size: 18px;
+    padding-top: 25px;
+    margin: 0 30px;
+  }
+  
+  .conteudo-sobre span {
+    display: inline-block;
+    width: 100%;
+    color: gray;
+  }
+  
+  .conteudo-sobre i {
+    color: #59D986;
+  }
+  
+  .sobre-nos {
+    padding-top: 25px;
+    margin: 0 30px;
+  }
+  /*--------------------------------------------------------------
+  # Fim Salões
+  --------------------------------------------------------------*/
+
+
+
+
+
+  /*--------------------------------------------------------------
+  # FAQ
+  --------------------------------------------------------------*/
+
+section.faq {
+    background-color: #f8fbfe;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    border-top: 1px solid #a0a0a0;
+}
+  
+details {
+list-style-type: none;
+font-weight: 600;
+cursor: pointer;
+color: #343a40;
+background-color: white;
+margin: 10px 0;
+width: 100%;
+}
+
+summary {
+  background-color: #275934;
+  color: #F2F2F2;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding: 5px 0px 5px 10px;
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+  width: 100%;
+}
+
+details p {
+  color: gray;
+  font-size: 14px;
+  border: 1px solid #a0a0a0;
+  margin: 0;
+  padding: 5px 0px 5px 25px;
+  width: 99%;
+}
+
+  /*--------------------------------------------------------------
+  # Fim FAQ
+  --------------------------------------------------------------*/
+
+
+
+  /*--------------------------------------------------------------
+  # Depoimentos
+  --------------------------------------------------------------*/
+
+  .depoimentos {
+    text-align: center;
+    border-top: 1px solid #a0a0a0;
+  }
+  
+  section.depoimentos {
+    padding: 40px 0;
+  }
+  
+  .carrossel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carrossel-inner {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .carrossel-single {
+    margin-top: 25px;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carrossel-single img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: 100px; /* Ajuste conforme necessário */
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+  
+  .carrossel-single h3 {
+    margin: 0;
+  }
+  .carrossel-single h4 {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+    top: 1px;
+  }
+  
+  .carrossel-single-box {
+    padding: 20px;
+    background-color: #f3f9fd;
+    border-radius: 10px;
+    height: 55%;
+  }
+  
+  .carrossel-single-box p {
+    font-style: italic;
+    color: #4b4b4b;
+    font-size: 14px;
+  }
+  
+  .carrossel-single i {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+    color: #c9e3f5;
+    font-size: 19px;
+  }
+  
+  .center-depoi {
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2%;
+    flex-wrap: wrap;
+  }
+  
+  .center-especial {
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  /*--------------------------------------------------------------
+  # Fim Depoimentos
+  --------------------------------------------------------------*/
+
+
+  /*--------------------------------------------------------------
+  # Contato
+  --------------------------------------------------------------*/
+
+  section.contato {
+    text-align: center;
+    border-top: 1px solid #a0a0a0;
+    margin-top: 100px;
+    background-color: #f8fbfe;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  
+  .contatos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .info {
+    width: 50%;
+  }
+  
+  .contato-cliente {
+    width: 50%;
+  }
+  
+  .contatos .info h4 {
+    padding: 0 0 0 310px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #275934;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .contatos .info i {
+    font-size: 20px;
+    color: #59D986;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #e3f0fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 250px;
+  }
+  
+  .contatos .info p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #03A64A;
+  }
+  
+  .endereco {
+    text-align: left;
+    padding-bottom: 50px;
+  }
+  
+  .endereco p {
+    padding-left: 310px;
+  }
+  
+  .email {
+    text-align: left;
+    padding-bottom: 50px;
+  }
+  
+  .email p {
+    padding-left: 310px;
+  }
+  
+  .telefone {
+    text-align: left;
+  }
+  
+  .telefone p {
+    padding-left: 310px;
+  }
+  
+  .controle-form.primeiro {
+    height: 24px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    width: 300px;
+  }
+  
+  .controle-form.segundo {
+    height: 24px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    width: 622px;
+  }
+  
+  .controle-form.terceiro {
+    height: 24px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    width: 622px;
+    height: 110px;
+  }
+  
+  .contato-btn {
+    background: #275934;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #275934;
+  }
+  
+  .contato-btn:hover {
+    background: white;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #275934;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #275934;
+    transition: 0.3s;
+  }
+
+  /*--------------------------------------------------------------
+  # Fim Contato
+  --------------------------------------------------------------*/
+  
+
+
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+
+  footer {
+    background-color: #275934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .center-footer {
+    width: 100%;
+  }
+  
+  .conteudo-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .conteudo-footer div {
+    flex: 0 0 30%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .conteudo-footer h3,
+  .conteudo-footer p,
+  .conteudo-footer a,
+  .conteudo-footer strong,
+  .conteudo-footer i,
+  .conteudo-footer h4 {
+    color: white;
+    font-size: 14px;
+  }
+  
+  .conteudo-dois a:hover {
+    color: rgb(98, 180, 212);
+    transition: 0.3s;
+  
+  }
+  
+  .conteudo-footer a {
+    padding-left: 10px;
+  }
+  
+  .conteudo-footer li {
+    padding-bottom: 10px;
+  }
+  
+  .conteudo-footer .h3f {
+    margin: 0;
+    margin-right: 225px;
+  }
+  
+  .conteudo-footer .h4ff {
+    margin: 0;
+    margin-right: 105px;
+  }
+  
+  .conteudo-footer .h4f {
+    margin: 0;
+    margin-right: 58px;
+  }
+  
+  .center-footer .conteudo-dois ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .center-footer .conteudo-tres ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  /*--------------------------------------------------------------
+  # Fim Footer
+  --------------------------------------------------------------*/
+
+
+  @media screen and (max-width: 1024px) {
+    .servicos,
+    .conteudo,
+    .titulos {
+      width: 100%;
+      padding-left: 0;
+    }
+    .conteudo-sobre {
+      flex-direction: column;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 300px; 
+      margin-bottom: 20px;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    .controle-form {
+      height: 24px;
+      border: 1px solid #ccc;
+      padding: 8px;
+      border-radius: 3px;
+      width: 340px;
+    }
+  
+    .contato-cliente {
+      margin: 0;
+      padding-top: 50px;
+      width: 100%;
+    }
+  
+    .info {
+      width: 100%;
+      margin: 0;
+      margin-right: 50px;
+    }
+  
+    .endereco {
+      width: 100%;
+    }
+  
+    .endereco p {
+      padding: 0 0 0 60px;
+    }
+  
+    .contatos .info i {
+      margin: 0;
+    }
+  
+    .contatos .info h4 {
+      padding: 0 0 0 60px;
+    }
+  
+    .email {
+      width: 100%;
+    }
+  
+    .email p {
+      padding: 0 0 0 60px;
+    }
+    .telefone {
+      width: 100%;
+    }
+    .telefone p {
+      padding: 0 0 0 60px;
+    }
+  
+    .secao-contato p {
+      color: gray;
+      font-size: 14px;
+      margin: 10px 0;
+      margin-bottom: 50px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .controle-form.segundo {
+      width: 85%;
+    }
+  
+    .controle-form.terceiro {
+      width: 85%;
+    }
+  
+    .conteudo-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .carrossel-single-box {
+      width: 50%;
+    }
+  
+    .carrossel-single {
+      text-align: left;
+    }
+  
+  }
+  
